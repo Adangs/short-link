@@ -8,9 +8,9 @@
  * @param {string} url 原始地址
  * @param {number} min 生成长度
  * */
-import md5 from 'md5'
+const md5 = require('md5')
 
-const useShortLink = (url, min = 4) => {
+const useShortLinkKey = (url, min = 4) => {
   const chars = 'abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
   const md5Url = md5(url || '')
   const keys = []
@@ -31,6 +31,4 @@ const useShortLink = (url, min = 4) => {
   return keys.join('');
 }
 
-export {
-  useShortLink
-}
+module.exports = useShortLinkKey
