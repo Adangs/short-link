@@ -1,6 +1,6 @@
 {
   "name": "short-links",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a short link key",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,8 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.52.0",
     "@typescript-eslint/parser": "^5.52.0"
+  },
+  "dependencies": {
+    "md5": "^2.3.0"
   }
 }
