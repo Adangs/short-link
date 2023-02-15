@@ -1,2 +1,8 @@
 # short-link
-short link key
+Create a short link key
+
+
+### 发布
+```shell
+npm publish
+```
